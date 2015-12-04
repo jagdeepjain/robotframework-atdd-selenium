@@ -1,0 +1,23 @@
+*** Settings ***
+Library   Selenium2Library
+Library   OperatingSystem
+
+*** Variables ***
+${BROWSER}   	ff
+${DELAY}	 	5
+
+*** Keywords ***
+www.google.co.in has been launched in firefox browser
+   Open Browser   http://www.google.co.in/   ${BROWSER}
+   Maximize Browser Window
+
+I entered ${search_text} as search text
+   Input Text   id=lst-ib   ${search_text}
+   Click Button   name=btnG
+
+I can see the search results containing the entered word ${result_text}
+   Sleep   ${DELAY}
+   Page Should Contain   ${result_text}
+
+I close the browser window
+   Close Browser
