@@ -1,6 +1,6 @@
 
 *** Settings ***
-Documentation   Test google search with sepecific word
+Documentation   Test google search with specific word
 Resource   ../keywords/common_resources.txt
 
 *** Variables ***
@@ -8,7 +8,7 @@ ${search_text}   amazon
 ${result_text}   amazon.in - Amazon - India's Largest Online Store
 
 *** Test Case ***
-Scenaro: Search specific word in google search engine
+Scenario: Search specific word in google search engine
 	Given www.google.co.in has been launched in firefox browser
 	When I entered ${search_text} as search text
 	Then I can see the search results containing the entered word ${result_text}
