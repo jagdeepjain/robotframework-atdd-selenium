@@ -12,19 +12,18 @@ Have Keywords folder containing all common expression in Given, When and Then pr
 C:\robotframework-atdd-selenium>pybot tests/google-search.txt
 
 # report
-`==============================================================================`
-`Google-Search :: Test google search with specific word`
-`==============================================================================`
-`Scenario: Search specific word in google search engine                | PASS |`
-`------------------------------------------------------------------------------`
-`Google-Search :: Test google search with specific word                | PASS |`
-`1 critical test, 1 passed, 0 failed`
-`1 test total, 1 passed, 0 failed`
-`==============================================================================`
-`Output:  C:\robotframework-atdd-selenium\output.xml`
-`Log:     C:\robotframework-atdd-selenium\log.html`
-`Report:  C:\robotframework-atdd-selenium\report.html`
-
+    ==============================================================================
+    Google-Search :: Test google search with specific word
+    ==============================================================================
+    Scenario: Search specific word in google search engine                | PASS |
+    ------------------------------------------------------------------------------
+    Google-Search :: Test google search with specific word                | PASS |
+    1 critical test, 1 passed, 0 failed
+    1 test total, 1 passed, 0 failed
+    ==============================================================================
+    Output:  C:\robotframework-atdd-selenium\output.xml
+    Log:     C:\robotframework-atdd-selenium\log.html
+    Report:  C:\robotframework-atdd-selenium\report.html
 It has:
 * `log.html` containing all the details of each test step.
 * `report.html` containing graphical report with good color notations
